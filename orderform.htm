@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+    Order Form
+    Author: Manveet Kaur 
+    Date: 2021/09/29
+    Filename:orderform.htm
+-->
+
+Online Order Form (Manveet Kaur!)
+<link href="confirmation.php" rel="php">
+
+</head>
+
+<body>
+<h1>Order<br/>
+ Order Form</h1>
+<h3>Please fill in this form and click on Submit</h3>
+<form action ="confirmation.php" method="post">
+    <div>
+        <p>Please type your gender</p>
+        <label for = "gender">("male", "female" or other):</label>
+        <input name="custGender" id="gender" type="text"  />
+    </div>
+
+    <div>
+        <p>Please type your size</p>
+        <label for = "size">"S", "M", "L", "XL" :</label>
+        <input name="custSize" id="size" type="text"  />
+    </div>
+
+    <div>
+        <p>Please type your color</p>
+        <label for = "color">"Blue", "Yellow" :</label>
+        <input name="favColor" id="color" type="text"  />
+    </div>
+    <br/>
+    <div id="buttons">
+        <input type="reset" value="Reset"/>
+        <input type="submit" value="Submit"/>
+    </div>
+
+</form>
+</body>
+</html>
