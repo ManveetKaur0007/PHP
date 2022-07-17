@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightblue;">
+<head>
+<title>Food online ordering- by {Manveet Kaur!}</title>
+</head>
+<body>
+<form action="food.php" method="POST">
+    <h1>Order your food here<br/>
+    Mexican special - $10<br/>
+    Italian special - $12<br/>
+    Indian special - $9</h1>
+<img src="Food.png" width="600" height="200" alt="Food" />
+
+<div>
+    <lable for = "special">What food special would you like to order: </lable>
+    <input name="special" id="special" type="text" required/>
+</div>
+<br/>
+<div>
+    <lable for = "delivery">Would you like your food to be picked up or delivered: </lable>
+    <input name="delivery" id="delivery" type="text" required/>
+</div>
+<br/>
+<div>
+    <lable for = "time">What time would you like your food: </lable>
+    <input name="time" id="time" type="text" required/>
+</div>
+<br/>
+
+<div id="buttons">
+    <input type="submit" name="submit" value="submit!"/> &nbsp; &nbsp;
+    <input type="reset" name="reset" value="reset!"/>
+</div>
+
+</form>
+</body>
+</html>
