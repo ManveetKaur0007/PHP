@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+    Report a Lost Pet
+    Author: Manveet Kaur 
+    Date: 2021/09/29
+    Filename:orderform.htm
+-->
+  <title>My Pet Got Lost - Report a Lost Pet</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="report.php" rel="php">
+</head>
+
+<body>
+<h2>My Pet Got Lost - Report a Lost Pet</h2>
+
+<p>Share your story of a lost pet:</p>
+<form action="report.php" method = "POST">
+
+    <div>
+      <lable for = "fName">First Name: </lable>
+      <input name="fName" id="fName" type="text" required/>
+    </div>
+
+    <div>
+      <lable for = "lName">Last Name: </lable>
+      <input name="lName" id="lName" type="text" required/>
+    </div>
+
+    <div>
+        <lable for = "email">What is your email address?</lable>
+        <input name="email" id="email" type="email" required/>
+    </div>
+
+    <div>
+        <lable for = "when">When did you last see your pet?</lable>
+        <input name="when" id="when" type="text"/>
+    </div>
+
+    <div>
+        <lable for = "howLong">How long has your pet been gone?</lable>
+        <input name="howLong" id="howLong" type="text"/>
+    </div>
+
+    <div>
+        <lable for = "idTag">Does your pet have an ID tag?</lable>
+        <input name="idTag" id="idTag" type="text"/>
+    </div>
+
+    <div>
+        <lable for = "petDescription">Describe your pet: </lable>
+        <input name="petDescription" id="petDescription" type="text" size="32"/>
+    </div>
+
+    <div>
+        <lable for = "petName">What is your pet's name?</lable>
+        <input name="petName" id="petName" type="text" size="32"/>
+    </div>
+
+    <div>
+        <label>Have you seen my dog Max?</label>
+        <label for="yes" class="radioLabels">Yes</label>
+        <input name="maxSeen" id="yes" type="radio" value="yes" required>
+        <label for="no" class="radioLabels">No</label>
+        <input name="maxSeen" id="no" type="radio" value="no" required>
+    </div>
+
+<img src="dog.jpg" width="133" height="200" alt="My lost dog Max." />
+
+    <div>
+        <lable for = "otherInfo">Any other comment or Information?</lable>
+        <textarea name="otherInfo" id="otherInfo" ></textarea>
+    </div>
+
+    <div id="buttons">
+        <input type="submit" name="submit" value="Report Lost Pet"/>
+    </div>
+</form>
+</body>
+</html>
